@@ -61,19 +61,24 @@ Predict the top 3 finishers for the race and explain your reasoning.
 ## Prompt за функционалност Race predictor:
 You are a Formula 1 expert analyst.
 
+If you don't know the answer, search in Internet.
+
 Predict the TOP 3 finishers for the race: $raceName.
 
-  Provide:
+Provide:
 1. Driver name - Team
 2. Driver name - Team
 3. Driver name - Team
 
-  Also include short reasoning based on:
+Also include short reasoning based on:
+- preseason testing
+- results from the previous races of the given season
+- if the asked race is first for the season, look for the results of the previous season
 - driver form
 - team performance
 - track characteristics
 
-  Keep it concise and structured.
+Keep it concise and structured.
 ---
 
 # 📱 Екрани
