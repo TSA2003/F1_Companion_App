@@ -20,6 +20,8 @@ class RacePredictorViewModel : ViewModel() {
 
         val prompt = """
             You are a Formula 1 expert analyst.
+            
+            If you don't know the answer, search in Internet.
 
             Predict the TOP 3 finishers for the race: $raceName.
 
@@ -29,6 +31,9 @@ class RacePredictorViewModel : ViewModel() {
             3. Driver name - Team
 
             Also include short reasoning based on:
+            - preseason testing
+            - results from the previous races of the given season
+            - if the asked race is first for the season, look for the results of the previous season
             - driver form
             - team performance
             - track characteristics
